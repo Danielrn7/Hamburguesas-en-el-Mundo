@@ -25,7 +25,10 @@ class ColeccionDePaises {
 
 class ColeccionDeHamburguesas {
 
-    let hamburguesas = ["Doble Queso", "Triple Carne", "Americana con Queso", "Texana", "Ahumada", "Doble Pollo", "Pollo Asado", "Estilo Japones", "Estilo Barbacoa","Vegetal", "Sin Sal", "Bajo en Grasa", "Estilo California", "Salvaje", "Doble Pepinillo", "Doble Carne", "Cebolla Caramelizada", "Picante Extra Hot", "Picante Suave", "Estilo Vaquero"]
+    let hamburguesas = ["Doble Queso", "Triple Carne", "Americana con Queso", "Texana", "Ahumada", "Doble Pollo", "Pollo Asado", 
+                        "Estilo Japones", "Estilo Barbacoa","Vegetal", "Sin Sal", "Bajo en Grasa", "Estilo California", "Salvaje", 
+                        "Doble Pepinillo", "Doble Carne", "Cebolla Caramelizada", "Picante Extra Hot", "Picante Suave",
+                        "Estilo Vaquero"]
 
     func obtenHamburguesa() -> String {
         let burgerR = Int( arc4random() )  % hamburguesas.count
