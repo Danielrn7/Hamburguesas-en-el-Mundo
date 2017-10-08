@@ -9,12 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+
+    @IBOutlet var labelHamburguesa: UILabel!
+    @IBOutlet var labelPais: UILabel!
     
-    
-    @IBOutlet weak var mensajePositivo: UILabel!
     let colores = Colores()
-    let frases = Datos()
-   
+    let hamburguesa = ColeccionDeHamburguesas()
+    let pais = ColeccionDePaises()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,13 +27,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func dameUnMensajePositivo(){
-        mensajePositivo.text = frases.regresaFraseFeliz()
-        let colorAleatorio = colores.regresaColorAleatorio()
-        view.backgroundColor = colorAleatorio
-        view.tintColor = colorAleatorio
+    @IBAction func darHamburguesa() {
+        labelHamburguesa.text = hamburguesa.obtenHamburguesa()
+        labelPais.text = pais.obtenPais()
+        view.backgroundColor = colores.regresaColorAleatorio()
     }
-    
-    
-}
 
+}
